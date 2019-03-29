@@ -6,8 +6,6 @@ matrix:
          - clang
          - gcc
        script:
-         - gcc -o calcheader calcheader.c 
-         - ./calcheader
          - gcc -o calc_main calc_main.c 
          - ./calc_main
          - gcc -o calc_function calc_function.c 
