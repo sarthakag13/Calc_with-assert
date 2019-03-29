@@ -7,7 +7,4 @@ matrix:
          - gcc
        script:
          - gcc -o test calc_function.c 
-         - gcc -o test calc_main.c
-         - gcc -o test calc_testing.c
-         - gcc -o test calcheader.h
          - ./test
