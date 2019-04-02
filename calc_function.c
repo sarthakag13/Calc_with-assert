@@ -11,9 +11,9 @@ return(x*y);
 int div(int x,int y){
     if(y!=0)
        return(x/y);
-       else{
+    else{
        printf("Invalid Input/n");
-       return (-1);
+       return (1);
        }
 }
 int power(int x,int y){
