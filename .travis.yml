@@ -1,14 +1,16 @@
-matrix:
-  include:
+ matrix:
+   include:
      - language: c
        sudo: false # only for faster builds
        compiler: 
          - clang
          - gcc
        script:
-         - gcc -o calc_main calc_main.c 
-         - ./calc_main
-         - gcc -o calc_function calc_function.c 
-         - ./calc_function         
-         - gcc -o calc_testing calc_testing.c 
-         - ./calc_testing
+         - gcc -o test calc_function.c 
+         - ./test
+         - gcc -o test calc_main.c
+         - ./test
+         - gcc -o test calc_testing.c
+         - ./test
+         - gcc -o test calcheader.h
+         - ./test
