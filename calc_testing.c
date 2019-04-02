@@ -45,7 +45,7 @@ assert(4==div(-8,-2));
 printf("both negative value division is correct\n");
 assert(0==div(0,-2));
 printf("num zero value division is correct\n");
-assert(-1==div(8,0));
+assert(1==div(8,0));
 printf("deno zero value division is correct\n");
 }
 
